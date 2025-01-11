@@ -1,0 +1,31 @@
+[project]
+name = "ComfyUI-RMBG"
+version = "0.1.0"
+description = "A ComfyUI custom node designed for advanced image background removal utilizing multiple models, including RMBG-2.0, INSPYRENET, and BEN."
+authors = [
+    {name = "Damian Imrich", email = "damian@dimrich.com"}
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "Pillow>=9.0.0",
+    "numpy>=1.22.0",
+    "huggingface-hub>=0.19.0",
+    "tqdm>=4.65.0",
+    "transformers>=4.35.0",
+    "transparent-background>=1.2.4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "GPL-3.0"}
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["comfyui-rmbg"]
+
+[project.urls]
+Homepage = "https://github.com/username/ComfyUI-RMBG"
+Repository = "https://github.com/username/ComfyUI-RMBG.git" 
